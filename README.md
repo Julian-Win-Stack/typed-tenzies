@@ -1,19 +1,24 @@
-# Getting Started
-Install the dependencies and run the project
-```
+# Typed Tenzies (TypeScript Version)
+
+This project is a **TypeScript migration** of an existing React app originally written in JavaScript.
+
+The goal was not to add new features, but to practice converting a real React codebase to TypeScript with proper typing and minimal changes to behavior.
+
+## What was done
+- Converted React components from `.js/.jsx` to `.ts/.tsx`
+- Added and configured TypeScript (`tsconfig.json`)
+- Typed component props, state, refs, and handlers
+- Used type narrowing and inference instead of excessive annotations
+- Kept runtime behavior identical to the original JS version
+
+## Tech Stack
+- React
+- TypeScript
+- Vite
+- nanoid
+- react-confetti
+
+## How to run
+```bash
 npm install
-npm start
-```
-
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
-
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+npm run dev
